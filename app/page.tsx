@@ -146,8 +146,7 @@ export default function Home() {
             <p className="text-muted">
               I care about shipping things end-to-end — the unglamorous
               integration work, the edge cases, the small details that make a
-              product feel good. Outside of code I'm probably watching the
-              Celtics.
+              product feel good. Outside of code I'm probably watching football.
             </p>
 
             <div className="pt-6 flex flex-wrap gap-2">
