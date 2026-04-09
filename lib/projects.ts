@@ -14,33 +14,43 @@ export const projects: Project[] = [
     slug: "sporcle-league",
     title: "Sporcle League",
     year: "2024—",
-    role: "Solo — design, product, engineering",
+    role: "Solo — product, design, engineering",
     summary:
-      "A competitive quiz platform with real-time battle royale, playoff brackets, and an XP progression system.",
+      "A real-time competitive trivia platform where coworkers face off on daily Sporcle quizzes, climb a season leaderboard, and battle through a 32-team playoff bracket.",
     description:
-      "Single-page web app built on vanilla JS and Firebase. Features include real-time Battle Royale games, a full playoff tournament system with veto mechanics and live bracket visualization, role-based access control, and Stripe-powered subscriptions. Designed around a custom visual system with a distinctive color palette and display type.",
+      "Full-stack web app built on Firebase (Firestore, Auth, Cloud Functions, Hosting). Features include a daily quiz leaderboard with a multi-level tiebreaker system, real-time head-to-head matchmaking across nine categories with streak tracking, a 32-team NCAA-style playoff bracket with automatic seeding from season standings, a physics-based quiz wheel, a Hall of Champions with season awards, and a full admin panel for quiz management, points editing, and playoff controls. Security enforced end-to-end via Firestore rules and custom auth claims.",
     stack: [
       "JavaScript",
-      "Bootstrap 5",
-      "Firebase / Firestore",
+      "React",
+      "Firebase",
+      "Firestore",
       "Cloud Functions",
-      "Stripe",
+      "Bootstrap 5",
     ],
     links: [
-      { label: "Live site", href: "#" },
-      { label: "Case study", href: "#" },
+      { label: "Live site", href: "https://sporcleleague.com" },
+      { label: "GitHub", href: "https://github.com/JavaJared/Sporcle-League" },
     ],
   },
   {
     slug: "im-tourn",
     title: "I'm Tourn",
-    year: "2025",
-    role: "Solo project",
+    year: "2025—",
+    role: "Solo — product, design, engineering",
     summary:
-      "A tournament tool — short description goes here. Tell me more and I'll fill this in.",
+      "A full-stack tournament platform for hosting competitive bracket pools and prediction pools — built for everything from reality TV eliminations to esports finals to local sports leagues.",
     description:
-      "Placeholder. Share the details of I'm Tourn (what it does, stack, what you're proud of) and I'll write this section properly.",
-    stack: ["TBD"],
-    links: [{ label: "Coming soon", href: "#" }],
+      "Live production app with two parallel pool formats: traditional bracket pools (up to 64 participants, round-by-round predictions, tabloid-format PDF export) and prediction pools for category-based picks like award shows and reality TV. Hosts manage the full lifecycle — setup, result entry, retroactive score recalculation — with inline-editable descriptions, public leaderboards, and a guided 6-step onboarding tour for new users. Built on React and Firebase/Firestore with custom security rules, deployed on Netlify with a GoDaddy domain.",
+    stack: [
+      "React",
+      "JavaScript",
+      "Firebase",
+      "Firestore",
+      "Netlify",
+    ],
+    links: [
+      { label: "Live site", href: "https://imtourn.com" },
+      { label: "GitHub", href: "https://github.com/JavaJared/im-tourn" },
+    ],
   },
 ];
