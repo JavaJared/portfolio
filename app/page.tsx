@@ -6,11 +6,8 @@ export default function Home() {
     <main className="relative mx-auto max-w-[1100px] px-6 md:px-12 lg:px-20 pt-16 md:pt-24 pb-32">
       {/* Top nav */}
       <header className="flex items-center justify-between mb-28 md:mb-40 rise">
-        <Link
-          href="/"
-          className="font-display text-lg tracking-tightest"
-        >
-          Jared<span className="text-accent">.</span>
+        <Link href="/" className="font-display text-lg tracking-tightest">
+          Jared Ellis<span className="text-accent">.</span>
         </Link>
         <nav className="flex gap-8 text-sm text-muted">
           <a href="#work" className="link-sweep hover:text-ink transition-colors">
@@ -31,24 +28,25 @@ export default function Home() {
           className="text-sm text-muted mb-6 rise"
           style={{ animationDelay: "0.1s" }}
         >
-          Computer Science · Boston
+          Software Engineer · Boston, MA
         </p>
         <h1
           className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tightest rise"
           style={{ animationDelay: "0.2s" }}
         >
-          Jared builds<br />
-          <span className="italic font-light">thoughtful</span> software
+          Building<br />
+          <span className="italic font-light">thoughtful</span> software,
           <br />
-          for the web.
+          end to end.
         </h1>
         <p
           className="mt-10 max-w-xl text-lg text-muted leading-relaxed rise"
           style={{ animationDelay: "0.35s" }}
         >
-          I'm a CS student focused on full-stack web apps, game design, and
-          applied machine learning. I like building things that feel good to
-          use and shipping them end-to-end.
+          I'm a software engineer at Amazon working on large-scale AI
+          systems. On the side I build full-stack web apps I'd actually want
+          to use — real-time platforms, tournament and prediction pools, and
+          trivia leagues for my coworkers.
         </p>
         <div
           className="mt-10 flex gap-6 text-sm rise"
@@ -70,7 +68,8 @@ export default function Home() {
             Selected Work
           </h2>
           <span className="text-xs text-muted font-mono">
-            {projects.length.toString().padStart(2, "0")} / {projects.length.toString().padStart(2, "0")}
+            {projects.length.toString().padStart(2, "0")} /{" "}
+            {projects.length.toString().padStart(2, "0")}
           </span>
         </div>
 
@@ -131,32 +130,57 @@ export default function Home() {
           </div>
           <div className="md:col-span-9 space-y-6 text-lg leading-relaxed max-w-2xl">
             <p>
-              I'm a computer science student with a focus on building things
-              people actually use. My work spans full-stack web development,
-              applied machine learning, and game design.
+              I'm a software engineer based in Boston. By day I work at Amazon
+              as an AI Content Expert II, designing and evaluating system-level
+              workflows to improve the performance of large-scale AI systems
+              and building internal tools in Python and C# to support data
+              processing and validation.
             </p>
             <p className="text-muted">
-              Recent explorations: agentic AI patterns and the Model Context
-              Protocol, decision-tree models for sports prediction, and
-              shipping the next release of Sporcle League.
+              I'm finishing an M.S. in Software Engineering at Boston
+              University (June 2026), with coursework in Advanced AI
+              Algorithms, Systems Analysis, Enterprise Database Design, and Web
+              Application Development. I earned my B.S. in Software Engineering
+              from Miami University of Ohio.
             </p>
             <p className="text-muted">
-              Outside of code I'm probably watching the Celtics.
+              I care about shipping things end-to-end — the unglamorous
+              integration work, the edge cases, the small details that make a
+              product feel good. Outside of code I'm probably watching the
+              Celtics.
             </p>
+
+            <div className="pt-6 flex flex-wrap gap-2">
+              {[
+                "Python",
+                "TypeScript",
+                "JavaScript",
+                "Node.js",
+                "C#",
+                "FastAPI",
+                "SQL Server",
+                "AWS",
+                "Linux",
+                "Git",
+                "Systems Design",
+              ].map((s) => (
+                <span
+                  key={s}
+                  className="text-xs font-mono text-muted border border-line px-3 py-1 rounded-full"
+                >
+                  {s}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* Contact */}
-      <section
-        id="contact"
-        className="border-t border-line pt-20"
-      >
+      <section id="contact" className="border-t border-line pt-20">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           <div className="md:col-span-3">
-            <h2 className="font-display text-2xl tracking-tight">
-              Say hello
-            </h2>
+            <h2 className="font-display text-2xl tracking-tight">Say hello</h2>
           </div>
           <div className="md:col-span-9">
             <p className="font-display text-3xl md:text-5xl tracking-tightest leading-[1.05] max-w-2xl">
@@ -165,15 +189,21 @@ export default function Home() {
             </p>
             <div className="mt-10 flex flex-col md:flex-row md:items-center gap-6 md:gap-10 text-sm">
               <a
-                href="mailto:your@email.com"
+                href="mailto:jaredellis533@gmail.com"
                 className="link-sweep font-mono"
               >
-                your@email.com
+                jaredellis533@gmail.com
               </a>
-              <a href="https://github.com/" className="link-sweep text-muted">
+              <a
+                href="https://github.com/JavaJared"
+                className="link-sweep text-muted"
+              >
                 GitHub ↗
               </a>
-              <a href="https://linkedin.com/" className="link-sweep text-muted">
+              <a
+                href="https://www.linkedin.com/in/jaredellis01/"
+                className="link-sweep text-muted"
+              >
                 LinkedIn ↗
               </a>
             </div>
@@ -181,7 +211,7 @@ export default function Home() {
         </div>
 
         <footer className="mt-32 flex justify-between items-center text-xs text-muted font-mono">
-          <span>© {new Date().getFullYear()} Jared</span>
+          <span>© {new Date().getFullYear()} Jared Ellis</span>
           <span>Built with Next.js · Deployed on Vercel</span>
         </footer>
       </section>
